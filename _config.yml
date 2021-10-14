@@ -12,7 +12,7 @@ linkedin_username: ~
 pinterest_username: ~
 youtube_username: ~
 googleplus_username: ~
-rss: true
+rss: false
 
 show_excerpts: true
 date_format: "%b %-d, %Y"
