@@ -3,7 +3,7 @@ title: Home
 layout: home
 ---
 
-## Hi ! I'm Sebastián
+### Hi ! I'm Sebastián
 
 chilean, <strong style="color:#E91E63">applied mathematician</strong>, living in France after having worked as <strong style="color:#303F9F">postdoctoral researcher at Géoazur CNRS</strong>. Before that, I got a <strong>PhD</strong> and an <strong>M2</strong> degree in Applied Mathematics from Université Paris Dauphine-PSL, and a <strong>Mathematical Engineering</strong> degree from Universidad de Chile.
 					
