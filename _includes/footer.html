@@ -14,6 +14,14 @@
       {%- if site.googleplus_username -%}<li><a href="https://plus.google.com/{{ site.googleplus_username| escape }}" class="icon fa-google-plus"><span class="label">Google+</span></a></li>{%- endif -%}
       {%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}" class="icon fa-rss"><span class="label">RSS</span></a></li>{%- endif -%}
     </ul>
+	<!-- -->	
+    <ul class="navigation">
+	  <li> <a href="index.html"> Home </a> </li>
+	  <li> <a href="about.html"> About </a> </li>	  
+	  <li> <a href="research.html"> Research </a> </li>
+	  <li> <a href="CV.html"> CV </a> </li>
+    </ul>
+    <!-- -->    
     <ul class="copyright">
       <li>&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}</li>
       <li>Design: <a href="http://html5up.net" rel="nofollow">HTML5 UP</a></li>
