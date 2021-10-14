@@ -1,5 +1,5 @@
 ---
-title: Research (temporary title)
+title: Research
 layout: page
 ---
 

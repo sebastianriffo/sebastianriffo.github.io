@@ -16,11 +16,12 @@
     </ul>
 	<!-- -->	
     <ul class="navigation">
-	  <a href="{{ 'index.html' | relative_url }}"> Home </a> | <a href="about.html"> About </a> | <a href="research.html"> Research </a> | <a href="CV.html"> CV </a>
+	  <a href="{{ 'index.html' | relative_url }}"> About </a> | <a href="{{ 'research.html' | relative_url }}"> Research </a> | <a href="{{ 'CV.html' | relative_url }}"> CV </a>
     </ul>
     <!-- -->    
     <ul class="copyright">
-      <li>&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}</li>
+      <!-- <li>&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}</li> -->
+      <li>&copy; {{ site.time | date: '%Y' }} S. Riffo</li>      
       <li>Design: <a href="http://html5up.net" rel="nofollow">HTML5 UP</a></li>
       <li>Powered by: <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a></li>
     </ul>
