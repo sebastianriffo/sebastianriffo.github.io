@@ -664,31 +664,16 @@ $size-header-pad: 4em;
 			}
 		}
 
-/*
 		&.avatar {
-			border-radius: 200%;
+			border-radius: 200%; /*100%*/
 
 			&:before {
 				display: none;
 			}
 
 			img {
-				border-radius: 200%;
-				width: 150%;
-			}
-		}
-*/
-
-		&.avatar {
-			border-radius: 100%;
-
-			&:before {
-				display: none;
-			}
-
-			img {
-				border-radius: 100%;
-				width: 100%;
+				border-radius: 200%; /*100%;*/  
+				width: 150%; /*100%;*/
 			}
 		}
 	}
