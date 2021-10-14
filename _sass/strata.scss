@@ -1080,7 +1080,7 @@ $size-header-pad: 4em;
 		padding: 8em 4em; /*($size-header-pad * 2) $size-header-pad;*/
 		position: fixed;
 		text-align: right;
-		top: -4em /*0;*/
+		top: -4em; /*0;*/
 		width: 30%; /*$size-header-width;*/
 
 		> * {
