@@ -1,4 +1,5 @@
 ---
+usemathjax: true
 title: CV
 layout: page
 ---

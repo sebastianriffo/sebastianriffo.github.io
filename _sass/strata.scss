@@ -878,7 +878,7 @@ $size-header-pad: 4em;
 
 	table {
 		margin: 0 0 _size(element-margin) 0;
-		width: 100%;
+		max-width: 100%; /*width: 100%;*/ 
 
 		tbody {
 			tr {

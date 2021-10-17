@@ -23,6 +23,7 @@ date_format: "%b %-d, %Y"
 # Build settings
 # theme: jekyll-theme-strata
 # remote_theme: mloberg/strata-jekyll-theme
+markdown: kramdown
 
 plugins:
   - jekyll-feed

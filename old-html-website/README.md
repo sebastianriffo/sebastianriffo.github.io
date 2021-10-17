@@ -1,2 +1,0 @@
-# sebastianriffo.github.io
-website
