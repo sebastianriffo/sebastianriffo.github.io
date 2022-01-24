@@ -1,0 +1,154 @@
+<!doctype html>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Research | Sebastián RIFFO</title>
+<meta name="generator" content="Jekyll v3.9.1" />
+<meta property="og:title" content="Research" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Former postdoctoral fellow" />
+<meta property="og:description" content="Former postdoctoral fellow" />
+<link rel="canonical" href="http://localhost:4000/research.html" />
+<meta property="og:url" content="http://localhost:4000/research.html" />
+<meta property="og:site_name" content="Sebastián RIFFO" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Research" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/research.html","headline":"Research","description":"Former postdoctoral fellow","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/main.css" /><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Sebastián RIFFO" /><script type="text/javascript" async
+ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script></head>
+<body class="is-preload"><!-- Header -->
+<header id="header">
+  <div class="inner">
+	<!--
+    <a href="/" class="image avatar"><img src="" alt="Sebastián RIFFO" /></a>
+    -->
+    <a href="/" class="image avatar"><img src="assets/images/avatar.jpg" alt="Sebastián RIFFO" /></a>        
+    <h1>
+      <strong>Sebastián RIFFO</strong><br/>
+    </h1>
+    <!-- -->
+    <p style="color:#A2A2A2">Former postdoctoral fellow</br> at Géoazur CNRS</p>       
+  </div>
+  
+  <!--
+  <div class="contact">
+	- Contact - <br/>
+	<p style="margin-bottom:0.25cm;"> <a href="mailto: riffo@geoazur.unice.fr" style="color:#D7DBDD">riffo [at] geoazur.unice.fr </a> </p>
+					
+    <br/>
+	<br/>
+	<br/>
+	<br/>																				
+	Bâtiment 4, Campus Azur CNRS <br/>
+	250 rue Albert Einstein <br/>
+	CS 10269 - F 06905 SOPHIA ANTIPOLIS Cedex <br/>
+	FRANCE <br/>
+	<br/>
+	<br/>					
+  </div>  
+  -->  
+
+</header>
+<main id="main" class="page-content" aria-label="Content">
+        <article class="post">
+  <!--
+  <h2 class="post-title">Research</h2>
+  -->
+
+  <div class="post-content">
+      <h2 id="research-interests"><strong>Research Interests</strong></h2>
+<p>My research focuses on the development and analysis of algorithms for solving differential equations through Domain Decomposition Methods (Parareal, Schwarz), with possible applications to optimization and data assimilation problems (to improve).</p>
+
+<!-- I am attracted by the opportunity to work in a multidisciplinary team 
+The present thesis aims to contribute to the development of a theoretical framework for three problems in the context
+of renewable marine energy. -->
+
+<!-- 
+KEYWORDS
+Parareal algorithm, Parallel data assimilation, 
+Bathymetry optimization, Helmholtz equation, 
+Blade element method, Blade design.
+-->
+<hr />
+
+<h3 id="domain-decomposition-methods"><strong style="color:#0288D1">Domain decomposition methods</strong></h3>
+
+<p><strong>ORAS</strong> <!-- combined with geophysics**   
+The young researcher will be in charge of the development and optimization of a time-harmonic wave-equation solver (Helmholtz problem) for applications in the fields of seismic and medical imaging. The numerical schemes will rely on a compact finite-difference method on regular Cartesian grids and on the finite element method on unstructured tetrahedral meshes. The numerical schemes will be developed for both the acousto- and elasto-dynamic equations. The linear system resulting from the discretization of the wave equation will be solved with iterative methods such as GMRES (Generalized minimal residual) preconditioned by the two-level domain-decomposition method ORAS (Two-level Optimized Restricted Additive Schwarz). The wave equation solver will be interfaced with 3D imaging code based upon frequency-domain Full Waveform Inversion (FWI), a PDE-constrained optimization problem for wavefield and parameter estimation --></p>
+
+<p><strong>Time-parallelization of sequential data assimilation problems</strong><br />
+In the first part, we propose a procedure to couple unbounded in time data assimilation methods with time-parallel algorithms. The combination between the Luenberger observer and Parareal algorithm is studied, providing a way to estimate the number of parareal iterations required to preserve the observer rate of convergence, as well as an estimation of the theoretical efficiency of the entire procedure.</p>
+
+<!--
+We propose a procedure to couple unbounded in time data assimilation methods with time-parallel algorithms. In order to do so, we design a procedure called Diamond
+strategy, that consists in splitting the infinite time interval into bounded windows and then apply, following a sequential order, the time-parallel solver on each. The
+problem we consider deals with the identification of a system state by using a Luenberger observer. This strategy gives rise to an exponential rate of convergence, that we aim at preserving when coupling it with the Parareal algorithm. We provide a way to estimate, on each window, the number of parareal iterations required to preserve the observer rate of convergence. In addition, we estimate the theoretical efficiency of the whole procedure.
+-->
+
+<h3 id="optimization"><strong style="color:#E91E63">Optimization</strong></h3>
+<p><strong>Bathymetry optimization</strong><br />
+<!-- 
+We then discuss the determination of a bathymetry from an optimization perspective. Imposing that wave propagation must fulfill a certain criterion associated with a cost functional, we consider a PDE-constrained optimization problem where the bathymetry plays the role of control and wave propagation is described by the Helmholtz equation. We are
+able to prove, under suitable assumptions, the continuity of the control-to-state mapping and the existence of an optimal solution, including also some results about solutions to Helmholtz problem and convergence in a discrete framework. This work is complemented by numerical experiments.
+-->
+The wave equation is often used to model wave propagation in coastal engineering problems, since its simplicity leads to an explicit
+solution, provided a flat bathymetry. Lifting this assumption yields a different formulation of the Helmholtz equation describing the total wave amplitude, being
+necessary to address the continuity and boundedness of its solution. Since we are interested in the determination of a bathymetry from an optimal control perspec-
+tive, we study a PDE-constrained optimization problem in which the bathymetry plays the role of control. We prove the continuity of the control-to-state mapping
+and the existence of an optimal solution. The discrete optimization problem is also addressed, studying the convergence to the discrete optimal solution as well as the convergence of a FEM approximation.</p>
+
+<h3 id="analysis-of-algorithms"><strong style="color:#E91E63">Analysis of algorithms</strong></h3>
+<p><strong>Mathematical analysis of the blade element momentum theory (BEM)</strong> <br />
+The last part of this work is devoted to analyze the convergence of the Blade element momentum theory, a classical method used to determine the propeller efficiency as well as its design parameters. We propose a reformulation of the method that allows to obtain conditions for existence of solutions and establish the convergence of some solving
+algorithms. We also study the associated optimization problem in certain contexts.</p>
+
+<!--
+The Blade element momentum (BEM) theory is a classical method to determine the design parameters of a blade and maximize the propeller efficiency. Nevertheless, it has
+never been analyzed from a mathematical point of view. We then propose a reformulation of the model that allows to obtain conditions for existence of solutions and
+establish the convergence of some solving algorithms. We also study the associated optimization problem in various contexts.
+-->
+
+<!--
+The Blade Element Momentum theory (BEM), introduced by H. Glauert in 1926, provides a framework to model the aerodynamic interaction between a turbine and a fluid flow.
+This theory is either used to estimate turbine efficiency or as a design aid. However, a lack of mathematical interpretation limits the understanding of some of its angles. The aim of this paper is to propose an analysis of BEM equations. Our approach is based on a reformulation of Glauert’s model which enables us to identify criteria which ensure the existence of solution(s). In this framework, we also study the convergence of solution algorithms and analyze turbine design procedures. The mathematical analysis is completed and illustrated by numerical experiments.
+-->
+
+
+  </div>
+</article>
+
+    </div><!-- Footer -->
+<footer id="footer">
+  <div class="inner">
+    <ul class="icons"></ul>
+	<!-- -->	
+    <ul class="navigation"><a href="/index.html">About </a> | <!-- --><a href="/research.html" style="color:#FDFEFE">Research </a> | <!-- --><a href="/publications.html">Publications </a> | <!-- --><a href="/CV.html">CV </a>
+    </ul>
+    <!-- -->       
+    <ul class="copyright">
+      <!-- <li>&copy; 2021 Sebastián RIFFO</li> -->
+      <li>&copy; 2021 S. RIFFO</li>      
+      <!--
+      <li>Design: <a href="http://html5up.net" rel="nofollow">HTML5 UP</a></li>
+      <li>Powered by: <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a></li>
+      -->
+      <li> <a href="http://html5up.net" rel="nofollow">HTML5 UP</a>, <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>, <a href="https://www.mathjax.org/" rel="nofollow">MathJax</a> </li>
+    </ul>
+  </div>
+</footer>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.poptrox.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

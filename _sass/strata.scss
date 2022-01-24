@@ -672,7 +672,7 @@ $size-header-pad: 4em;
 			}
 
 			img {
-				border-radius: 100%;   
+				border-radius: 150%;   
 				width: 100%; 
 			}
 		}
@@ -1096,7 +1096,7 @@ $size-header-pad: 4em;
 
 		.image.avatar {
 			margin: 0 0 (_size(element-margin) * 0.5) 0;
-			width: 9em; /*6.25em;*/
+			width: 12em; /*6.25em;*/
 		}
 	}
 
