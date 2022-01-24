@@ -4,7 +4,7 @@ title: Research
 layout: page
 ---
 ## **Research Interests**
-My research focuses on the development and analysis of algorithms for solving differential equations through Domain Decomposition Methods (Parareal, Schwarz), with possible applications to optimization and data assimilation problems (to improve).
+My research focuses on the development and analysis of algorithms for solving differential equations through Domain Decomposition Methods (Parareal, Schwarz), with possible applications to optimization and data assimilation problems. <!-- (to improve). -->
   
 <!-- I am attracted by the opportunity to work in a multidisciplinary team 
 The present thesis aims to contribute to the development of a theoretical framework for three problems in the context
