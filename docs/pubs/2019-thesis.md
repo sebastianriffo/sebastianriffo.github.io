@@ -7,7 +7,11 @@ targetname: tel.archives-ouvertes.fr
 time: 100
 message: This isn't here any more!
 
-image: /assets/logo/logo-dauphine.png
-width: 100
-height: 100
+description: Thesis Manuscript
+author: Sebastián RIFFO
+
+image: 
+ path: /assets/logo/logo-dauphine.png
+ width: 100
+ height: 100
 ---
