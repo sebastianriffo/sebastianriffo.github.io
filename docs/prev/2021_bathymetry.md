@@ -13,6 +13,6 @@ description:
 
 image: 
  path: /docs/prev/2021_batrymetry_inv-topography-top-approx.png
- width: 891	
+ width: 1200	
  height: 656
 ---
