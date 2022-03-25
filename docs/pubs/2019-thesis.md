@@ -6,5 +6,5 @@ targetname: tel.archives-ouvertes.fr
 time: 0
 message: This isn't here any more!
 
-image: assets/logo/logo-dauphine.png
+image: /assets/logo/logo-dauphine.png
 ---
