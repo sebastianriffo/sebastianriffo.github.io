@@ -2,7 +2,7 @@
 layout: forward
 
 targettitle: 
-target: https://sebastianriffo.github.io/docs/slides/2020-12-DD26_SRR.pdf#view=Fit
+target: https://sebastianriffo.github.io/docs/slides/2020-12_DD26_SRR.pdf#view=Fit
 targetname: Time-parallelization of sequential data assimilation problems
 time: 0
 message: This isn't here any more!
