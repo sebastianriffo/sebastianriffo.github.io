@@ -23,10 +23,9 @@ SIAM J. Appl. Math., 81(6), pp. 2596–2621, 2021
 + S. Riffo. 
 **Mathematical methods for marine energy extraction**.   
 PhD Dissertation, Université Paris Dauphine-PSL, 2019
-<!-- a href="https://tel.archives-ouvertes.fr/tel-02446450" target="_blank">(Manuscript)</a --> 
-<a href="docs/pubs/2019-thesis.html" target="_blank">(Manuscript)</a> 
-<a href="https://sebastianriffo.github.io/docs/slides/2019-10_defense_SRR.pdf" target="_blank">(Thesis defense)</a>
-
+<a href="https://tel.archives-ouvertes.fr/tel-02446450" target="_blank">(Manuscript)</a> 
+<!-- a href="https://sebastianriffo.github.io/docs/slides/2019-10_defense_SRR.pdf" target="_blank">(Thesis defense)</a -->
+<a href="docs/prev/2019_dissertation-defense.html" target="_blank">(Dissertation defense)</a>
 
 ## <strong style="color:#0288D1">In progress</strong>
 + P.-H. Tournier, P. Jolivet, V. Dolean, H. Aghamiry, S. Operto and S. Riffo. 
