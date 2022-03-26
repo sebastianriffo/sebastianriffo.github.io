@@ -33,5 +33,6 @@ Submitted to Geophysics
 <a href="https://arxiv.org/abs/2110.15113" target="_blank">(arXiv preprint)</a>
 + F. Kwok, S. Riffo and J. Salomon. 
 **Time-parallelization of sequential data assimilation problems**.  
+In progress
 <a href="docs/prev/2020_parareal_DD26.html" target="_blank">(DD26 talk)</a>
 <!--a href="https://sebastianriffo.github.io/docs/slides/2020-12-DD26_SRR.pdf" target="_blank">(DD26 talk)</a-->

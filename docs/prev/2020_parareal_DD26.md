@@ -13,6 +13,6 @@ description: DD26 talk
 
 image: 
  path: /docs/prev/2020_parareal_DD26.png
- width: 1354	
- height: 720
+ width: 1200	
+ height: 638
 ---
