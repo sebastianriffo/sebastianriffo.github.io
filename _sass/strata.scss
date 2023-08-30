@@ -141,6 +141,17 @@ $size-header-pad: 4em;
 			text-decoration: none;
 		}
 	}
+	
+	a.hidden {
+		color:inherit;
+		
+		&:hover {
+			border-bottom-color: transparent;
+			color:inherit !important;
+			text-decoration: none;			
+		}
+
+	}	
 
 	strong, b {
 		color: _palette(fg-bold);

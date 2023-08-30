@@ -1,35 +1,49 @@
 <!-- Footer -->
 <footer id="footer">
   <div class="inner">
+	  
+	{% comment %}
     <ul class="icons">
-      {%- if site.twitter_username -%}<li><a href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>{%- endif -%}
-      {%- if site.github_username -%}<li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="icon fa-github"><span class="label">GitHub</span></a></li>{%- endif -%}
-      {%- if site.dribbble_username -%}<li><a href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>{%- endif -%}
-      {%- if site.facebook_username -%}<li><a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" class="icon fa-facebook"></i><span class="label">Facebook</span></a></li>{%- endif -%}
-      {%- if site.flickr_username -%}<li><a href="https://www.flickr.com/photos/{{ site.flickr_username| cgi_escape | escape }}" class="icon fa-flickr"><span class="label">Flickr</span></a></li>{%- endif -%}
-      {%- if site.instagram_username -%}<li><a href="https://www.instagram.com/{{ site.instagram_username| cgi_escape | escape }}" class="icon fa-instagram"></i><span class="label">Instagram</span></a></li>{%- endif -%}
-      {%- if site.linkedin_username -%}<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" class="icon fa-linkedin"></i><span class="label">LinkedIn</span></a></li>{%- endif -%}
-      {%- if site.pinterest_username -%}<li><a href="https://www.pinterest.com/{{ site.pinterest_username| cgi_escape | escape }}" class="icon fa-pinterest"></i><span class="label">Pinterest</span></a></li>{%- endif -%}
-      {%- if site.youtube_username -%}<li><a href="https://www.youtube.com/{{ site.youtube_username| cgi_escape | escape }}" class="icon fa-youtube"><span class="label">YouTube</span></a></li>{%- endif -%}
-      {%- if site.googleplus_username -%}<li><a href="https://plus.google.com/{{ site.googleplus_username| escape }}" class="icon fa-google-plus"><span class="label">Google+</span></a></li>{%- endif -%}
-      {%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}" class="icon fa-rss"><span class="label">RSS</span></a></li>{%- endif -%}
+		{%- if site.github_username -%}<li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="icon fa-github"><span class="label">GitHub</span></a></li>{%- endif -%}
+		{%- if site.linkedin_username -%}<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" class="icon fa-linkedin"></i><span class="label">LinkedIn</span></a></li>{%- endif -%}
+
+		{%- if site.twitter_username -%}<li><a href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>{%- endif -%}
+		{%- if site.dribbble_username -%}<li><a href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>{%- endif -%}
+		{%- if site.facebook_username -%}<li><a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" class="icon fa-facebook"></i><span class="label">Facebook</span></a></li>{%- endif -%}
+		{%- if site.flickr_username -%}<li><a href="https://www.flickr.com/photos/{{ site.flickr_username| cgi_escape | escape }}" class="icon fa-flickr"><span class="label">Flickr</span></a></li>{%- endif -%}
+		{%- if site.instagram_username -%}<li><a href="https://www.instagram.com/{{ site.instagram_username| cgi_escape | escape }}" class="icon fa-instagram"></i><span class="label">Instagram</span></a></li>{%- endif -%}
+		{%- if site.pinterest_username -%}<li><a href="https://www.pinterest.com/{{ site.pinterest_username| cgi_escape | escape }}" class="icon fa-pinterest"></i><span class="label">Pinterest</span></a></li>{%- endif -%}
+		{%- if site.youtube_username -%}<li><a href="https://www.youtube.com/{{ site.youtube_username| cgi_escape | escape }}" class="icon fa-youtube"><span class="label">YouTube</span></a></li>{%- endif -%}
+		{%- if site.googleplus_username -%}<li><a href="https://plus.google.com/{{ site.googleplus_username| escape }}" class="icon fa-google-plus"><span class="label">Google+</span></a></li>{%- endif -%}
+		{%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}" class="icon fa-rss"><span class="label">RSS</span></a></li>{%- endif -%}
     </ul>
+    {% endcomment %}
+    
 	<!-- -->	
     <ul class="navigation">
-	  {%- if page.title == "Home" -%}<a href="{{ 'index.html' | relative_url }}" style="color:#FDFEFE">{%- else -%}<a href="{{ 'index.html' | relative_url }}">{%- endif -%} About </a> | <!-- -->
-	  {%- if page.title == "Research" -%}<a href="{{ 'research.html' | relative_url }}" style="color:#FDFEFE">{%- else -%}<a href="{{ 'research.html' | relative_url }}">{%- endif -%} Research </a> | <!-- -->
-	  {%- if page.title == "Publications" -%}<a href="{{ 'publications.html' | relative_url }}" style="color:#FDFEFE">{%- else -%}<a href="{{ 'publications.html' | relative_url }}">{%- endif -%} Publications </a> | <!-- -->	  
-	  {%- if page.title == "CV" -%}<a href="{{ 'CV.html' | relative_url }}" style="color:#FDFEFE">{%- else -%}<a href="{{ 'CV.html' | relative_url }}">{%- endif -%} CV </a>
+	{% assign pages=site.pages | where_exp: "item", "item.order >= 0" | where:"lang", page.lang | sort: "order" %}	 				
+
+	{% for index in pages %}
+		<a href="{{ index.url  | relative_url }}" {%- if page.title == index.title -%} style="color:#FDFEFE" {%- endif -%}> {{ index.title }} </a> 
+		{%- if index.order < pages.size -%}|{% endif %}
+	{% endfor %}
     </ul>
+    
     <!-- -->       
     <ul class="copyright">
       <!-- <li>&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}</li> -->
-      <li>&copy; {{ site.time | date: '%Y' }} S. RIFFO</li>      
+      <li>&copy; {{ site.time | date: '%Y ' }} 
+	  {%- if page.title == "CV" -%}	
+		<a class="hidden" href="{{ 'about.html' | relative_url }}">S. RIFFO <a/>
+	  {%- else -%} 
+		S. RIFFO 
+	  {%- endif -%}
+	  </li>      
       <!--
       <li>Design: <a href="http://html5up.net" rel="nofollow">HTML5 UP</a></li>
       <li>Powered by: <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a></li>
       -->
-      <li> <a href="http://html5up.net" rel="nofollow">HTML5 UP</a>, <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>, <a href="https://www.mathjax.org/" rel="nofollow">MathJax</a> </li>
+      <li> <a href="http://html5up.net" rel="nofollow">HTML5 UP</a>, <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> </li>
     </ul>
   </div>
 </footer>
