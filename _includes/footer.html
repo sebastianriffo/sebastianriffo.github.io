@@ -1,33 +1,34 @@
 <!-- Footer -->
 <footer id="footer">
-  <div class="inner">
-	  
-	{% comment %}
-    <ul class="icons">
-		{%- if site.github_username -%}<li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="icon fa-github"><span class="label">GitHub</span></a></li>{%- endif -%}
-		{%- if site.linkedin_username -%}<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" class="icon fa-linkedin"></i><span class="label">LinkedIn</span></a></li>{%- endif -%}
-
-		{%- if site.twitter_username -%}<li><a href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>{%- endif -%}
-		{%- if site.dribbble_username -%}<li><a href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>{%- endif -%}
-		{%- if site.facebook_username -%}<li><a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" class="icon fa-facebook"></i><span class="label">Facebook</span></a></li>{%- endif -%}
-		{%- if site.flickr_username -%}<li><a href="https://www.flickr.com/photos/{{ site.flickr_username| cgi_escape | escape }}" class="icon fa-flickr"><span class="label">Flickr</span></a></li>{%- endif -%}
-		{%- if site.instagram_username -%}<li><a href="https://www.instagram.com/{{ site.instagram_username| cgi_escape | escape }}" class="icon fa-instagram"></i><span class="label">Instagram</span></a></li>{%- endif -%}
-		{%- if site.pinterest_username -%}<li><a href="https://www.pinterest.com/{{ site.pinterest_username| cgi_escape | escape }}" class="icon fa-pinterest"></i><span class="label">Pinterest</span></a></li>{%- endif -%}
-		{%- if site.youtube_username -%}<li><a href="https://www.youtube.com/{{ site.youtube_username| cgi_escape | escape }}" class="icon fa-youtube"><span class="label">YouTube</span></a></li>{%- endif -%}
-		{%- if site.googleplus_username -%}<li><a href="https://plus.google.com/{{ site.googleplus_username| escape }}" class="icon fa-google-plus"><span class="label">Google+</span></a></li>{%- endif -%}
-		{%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}" class="icon fa-rss"><span class="label">RSS</span></a></li>{%- endif -%}
-    </ul>
-    {% endcomment %}
-    
+  <div class="inner">        
 	<!-- -->	
     <ul class="navigation">
 	{% assign pages=site.pages | where_exp: "item", "item.order >= 0" | where:"lang", page.lang | sort: "order" %}	 				
 
 	{% for index in pages %}
+		{% if index.ref2 == "academia" %}
 		<a href="{{ index.url  | relative_url }}" {%- if page.title == index.title -%} style="color:#FDFEFE" {%- endif -%}> {{ index.title }} </a> 
-		{%- if index.order < pages.size -%}|{% endif %}
+		{%- if index.order < 4 -%}|{% endif %}
+		{% endif %}		
 	{% endfor %}
-    </ul>
+
+	<br>
+	{% assign languages=site.pages | where_exp: "item", "item.ref == page.ref" | sort: "lang" %}
+	
+	{% for v in languages %}
+		{% unless v.lang contains page.lang %}
+			<a href="{{ v.url  | relative_url }}">
+				{%- if v.lang == "es" -%}
+				<img src="https://img.shields.io/badge/es-blueviolet.svg">
+				{% else %}
+				<img src="https://img.shields.io/badge/en-blueviolet.svg">
+				{% endif %}	
+				</a>
+		{% endunless %}	
+	{% endfor %}
+
+
+    </ul>  
     
     <!-- -->       
     <ul class="copyright">

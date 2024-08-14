@@ -1,14 +1,18 @@
 author: Sebastián RIFFO
 title: Sebastián RIFFO
-description: Applied Mathematician
 email: sebastianreyesr@gmail.com
 
-position: Former postdoc
-institution: Géoazur CNRS
+locals: 
+  es: 
+    description: Matemático aplicado
+    position: Investigador postdoctoral
+  en: 
+    description: Applied Mathematician
+    position: Postdoctoral researcher
+institution: IPSL (Sorbonne Université)
 
 github_username: sebastianriffo
 linkedin_username: sriffo
-
 twitter_username: ~
 dribbble_username: ~
 facebook_username: ~
@@ -32,3 +36,4 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  

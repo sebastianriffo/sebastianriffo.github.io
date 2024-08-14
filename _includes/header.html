@@ -1,19 +1,19 @@
 <!-- Header -->
 <header id="header">
   <div class="inner">
-	<!--
-    <a href="{{ "/" | relative_url }}" class="image avatar"><img src="{{ site.logo | relative_url }}" alt="{{ site.title | escape }}" /></a>
-    -->
-    <a href="{{ "/" | relative_url }}" class="image avatar"><img src="assets/images/avatar.jpg" alt="{{ site.title | escape }}" /></a>        
+
+    <a href="{{ "/" | relative_url }}" class="image avatar"><img {% if page.title == "Home" %} src="assets/images/avatar.jpg" {% else %} src="../assets/images/avatar.jpg" {% endif %} alt="{{ site.title | escape }}" /></a>        
+
     <h1> <strong>{{ site.title | escape }}</strong> </h1>
     <!-- -->
 	<h4 style="color:#A2A2A2">
-		{{ site.description | escape }} 
+		{{ site.locals[page.lang].description | escape }}
+
 		{% if site.github_username %} | <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="icon fa-github" style="color:#A2A2A2" target="_blank"><span class="label"> GitHub </span></a> {% endif %}    
 		{% if site.linkedin_username %} | <a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" class="icon fa-linkedin" style="color:#A2A2A2" target="_blank"><span class="label"> LinkedIn </span></a> {% endif %}    
 	</h4>
     
-    <p style="color:#A2A2A2"> {{ site.position | escape }} at {{ site.institution | escape }} </p>       
+    <p style="color:#A2A2A2"> {{ site.locals[page.lang].position | escape }} {% if page.lang == "en" %}at{% else %}en{% endif %} {{ site.institution | escape }} </p>       
     
   </div>
   

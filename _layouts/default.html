@@ -7,14 +7,29 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
+	{%- include head.html -%}  
 
-  {%- include head.html -%}  
-
-<body class="is-preload">
-
+<body class="is-preload"> 
     {%- include header.html -%}
 
-    <main id="main" class="page-content" aria-label="Content">
+	<main id="main" class="page-content" aria-label="Content">
+		
+		<!--
+		{% assign languages=site.pages | where_exp: "item", "item.ref == page.ref" | sort: "lang" %}
+		
+		{% for v in languages %}
+			{% unless v.lang contains page.lang %}
+				<a href="{{ v.url  | relative_url }}">
+					{%- if v.lang == "es" -%}
+					<img src="https://img.shields.io/badge/lang-es-blueviolet.svg">
+					{% else %}
+					<img src="https://img.shields.io/badge/lang-en-blueviolet.svg">
+					{% endif %}	
+					</a>
+			{% endunless %}	
+		{% endfor %}
+		-->
+		
         {{ content }}
     </div>
 
