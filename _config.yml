@@ -1,20 +1,20 @@
 author: Sebastián RIFFO
 title: Sebastián RIFFO
-email: sebastianreyesr@gmail.com
+email: sebastian.riffo@proton.me
 
 locals: 
   es: 
     description: Matemático aplicado
-    position: Investigador postdoctoral
+#    position: Investigador postdoctoral
   en: 
     description: Applied Mathematician
-    position: Postdoctoral researcher
-institution: IPSL (Sorbonne Université)
+#    position: Postdoctoral researcher
+#institution: 
+city: Paris, France
 
 github_username: sebastianriffo
 linkedin_username: sriffo
 twitter_username: ~
-dribbble_username: ~
 facebook_username: ~
 flickr_username: ~
 instagram_username: ~

@@ -9,31 +9,17 @@
 	<h4 style="color:#A2A2A2">
 		{{ site.locals[page.lang].description | escape }}
 
-		{% if site.github_username %} | <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="icon fa-github" style="color:#A2A2A2" target="_blank"><span class="label"> GitHub </span></a> {% endif %}    
+		{% if site.github_username %} | <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="icon fa-github" style="color:#A2A2A2" target="_blank"><span class="label"> GitHub </span></a> {% endif %} 
 		{% if site.linkedin_username %} | <a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" class="icon fa-linkedin" style="color:#A2A2A2" target="_blank"><span class="label"> LinkedIn </span></a> {% endif %}    
 	</h4>
     
-    <p style="color:#A2A2A2"> {{ site.locals[page.lang].position | escape }} {% if page.lang == "en" %}at{% else %}en{% endif %} {{ site.institution | escape }} </p>       
-    
+    {% if site.locals[page.lang].position %}    
+    <p style="color:#A2A2A2"> {{ site.locals[page.lang].position | escape }} 
+		{% if site.institution %}
+		{% if page.lang == "en" %}at{% else %}en{% endif %} {{ site.institution | escape }}
+		{% endif %}    
+    </p>
+	{% endif %}
+    <p style="color:#A2A2A2"> {{ site.city | escape }} </p>
   </div>
-  
-  
-  <!--
-  <div class="contact">
-	- Contact - <br/>
-	<p style="margin-bottom:0.25cm;"> <a href="mailto: riffo@geoazur.unice.fr" style="color:#D7DBDD">riffo [at] geoazur.unice.fr </a> </p>
-					
-    <br/>
-	<br/>
-	<br/>
-	<br/>																				
-	Bâtiment 4, Campus Azur CNRS <br/>
-	250 rue Albert Einstein <br/>
-	CS 10269 - F 06905 SOPHIA ANTIPOLIS Cedex <br/>
-	FRANCE <br/>
-	<br/>
-	<br/>					
-  </div>  
-  -->  
-
 </header>

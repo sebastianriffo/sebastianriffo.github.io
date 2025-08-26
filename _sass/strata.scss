@@ -1074,7 +1074,7 @@ $size-header-pad: 4em;
 		color: _palette(accent2, fg);
 		height: 110%; /*100%;*/
 		left: 0;
-		padding: ($size-header-pad * 2) $size-header-pad;
+		padding: $size-header-pad $size-header-pad ($size-header-pad * 2) $size-header-pad;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -1154,7 +1154,7 @@ $size-header-pad: 4em;
 	#main {
 		margin-left: $size-header-width;
 		max-width: 50em + $size-header-pad;
-		padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
+		padding: $size-header-pad $size-header-pad $size-header-pad $size-header-pad;
 		width: calc(100% - #{$size-header-width});
 
 		> section {
@@ -1366,7 +1366,7 @@ $size-header-pad: 4em;
 		/* Header */
 
 			#header {
-				padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
+				padding: $size-header-pad $size-header-pad $size-header-pad $size-header-pad;
 				width: $size-header-width;
 
 				h1 {
@@ -1401,7 +1401,7 @@ $size-header-pad: 4em;
 			#main {
 				margin-left: $size-header-width;
 				max-width: none;
-				padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
+				padding: $size-header-pad $size-header-pad $size-header-pad $size-header-pad;
 				width: calc(100% - #{$size-header-width});
 			}
 

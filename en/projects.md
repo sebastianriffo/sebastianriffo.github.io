@@ -8,20 +8,31 @@ ref: projects
 ref2: academia
 
 published: true
-order: 3
+order: 2
 ---
-
+<!--
 ## <strong style="color:#303F9F"> Personal projects </strong>
-<div class="row" style="width:50%;">
+-->
+
+<div class="row">
+  <div class="column">
+    <img src="/docs/prev/2024_MOMA.png">
+    <div class="text">
+    <a href="https://sebastianriffo.github.io/MOMA-static/dataviz.html" style="font-size: 18px; color:#b300b3" target="_blank">Metrics for ORCHIDEE Model Analysis (2024)</a>
+    <br> A D3.js/Flask visualization prototype of mean climatologies and time series for IPSL's terrestrial module simulations. Static version hosted in github.
+    </div>
+  </div> 
+
   <div class="column">
     <img src="/docs/prev/2023_visualizacion-2.png">
     <div class="text">
-    <a href="https://sebastianriffo.github.io/congreso-chile/en/home.html" style="font-size: 18px; color:#b300b3" target="_blank"> Chilean parliamentary election maps </a>
+    <a href="https://sebastianriffo.github.io/congreso-chile/en/home.html" style="font-size: 18px; color:#b300b3" target="_blank">Chilean parliamentary election maps (2023)</a>
     <br> An interactive visualization of the chilean parliamentary elections from 1932 onwards, for both the Chamber of Deputies and the Senate, integrating several public sources. 
     </div>
   </div>
-  
-  <!--
+</div>
+
+<!--
   <div class="column">
     <img src="/docs/prev/2020_parareal_DD26_square.png">
     <div class="text">
@@ -29,10 +40,7 @@ order: 3
     <br> A procedure to couple unbounded in time data assimilation methods with the Parareal algorithm.
     </div>
   </div>
-  -->
-</div>  
 
-<!-- 
 **Time-parallelization of sequential data assimilation problems.**
 
 In the first part, we propose a procedure to couple unbounded in time data assimilation methods with time-parallel algorithms. The combination between the Luenberger observer and Parareal algorithm is studied, providing a way to estimate the number of parareal iterations required to preserve the observer rate of convergence, as well as an estimation of the theoretical efficiency of the entire procedure.
@@ -65,7 +73,6 @@ In the last few years, my research focused on the development and analysis of al
   </div>
 </div>
 
-<!--
 **ORAS** combined with geophysics**  
 The young researcher will be in charge of the development and optimization of a time-harmonic wave-equation solver (Helmholtz problem) for applications in the fields of seismic and medical imaging. The numerical schemes will rely on a compact finite-difference method on regular Cartesian grids and on the finite element method on unstructured tetrahedral meshes. The numerical schemes will be developed for both the acousto- and elasto-dynamic equations. The linear system resulting from the discretization of the wave equation will be solved with iterative methods such as GMRES (Generalized minimal residual) preconditioned by the two-level domain-decomposition method ORAS (Two-level Optimized Restricted Additive Schwarz). The wave equation solver will be interfaced with 3D imaging code based upon frequency-domain Full Waveform Inversion (FWI), a PDE-constrained optimization problem for wavefield and parameter estimation 
 
@@ -73,7 +80,6 @@ The young researcher will be in charge of the development and optimization of a 
 #### <strong style="color:#E91E63">Optimization</strong>
 **.**  
 
-<!--
 We then discuss the determination of a bathymetry from an optimization perspective. Imposing that wave propagation must fulfill a certain criterion associated with a cost functional, we consider a PDE-constrained optimization problem where the bathymetry plays the role of control and wave propagation is described by the Helmholtz equation. We are
 able to prove, under suitable assumptions, the continuity of the control-to-state mapping and the existence of an optimal solution, including also some results about solutions to Helmholtz problem and convergence in a discrete framework. This work is complemented by numerical experiments.
 
