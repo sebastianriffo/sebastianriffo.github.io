@@ -12,7 +12,7 @@ title: Essentials, a new page for C-ESM-EP
 description: talk
 
 image: 
- path: /docs/prev/2025_cesmep_river-discharge.png
- width: 1400	
- height: 1200
+ path: /docs/prev/2025_cesmep_river-discharge_v2.png
+ width: 1530	
+ height: 800
 ---

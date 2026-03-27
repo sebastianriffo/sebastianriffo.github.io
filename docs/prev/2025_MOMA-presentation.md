@@ -2,7 +2,7 @@
 layout: forward
 
 targettitle: 
-target: https://sebastianriffo.github.io/docs/slides/2025-06-13_presentation_SR_ORC-Essentials.pdf#view=Fit
+target: https://sebastianriffo.github.io/docs/slides/2025-02-10_presentation_SR_ORC_evaluation-chain.pdf#view=Fit
 targetname: Towards an ORCHIDEE evaluation chain
 time: 0
 message: This isn't here any more!
@@ -12,7 +12,7 @@ title: Towards an ORCHIDEE evaluation chain
 description: talk
 
 image: 
- path: /docs/prev/2025_MOMA-presentation.png
- width: 1400	
- height: 1200
+ path: /docs/prev/2025_MOMA-presentation_v2.png
+ width: 1624
+ height: 850
 ---
