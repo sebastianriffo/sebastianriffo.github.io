@@ -16,7 +16,7 @@ order: 2
 
 <div class="row">
   <div class="column">
-    <img src="/docs/prev/2024_MOMA.png">
+    <img src="/docs/prev_projects/2024_MOMA.png">
     <div class="text">
     <a href="https://sebastianriffo.github.io/MOMA-static/dataviz.html" style="font-size: 18px; color:#b300b3" target="_blank">Metrics for ORCHIDEE Model Analysis (2024)</a>
     <br> A D3.js/Flask visualization prototype of mean climatologies and time series for IPSL's terrestrial module simulations. Static version hosted in github.
@@ -24,7 +24,7 @@ order: 2
   </div> 
 
   <div class="column">
-    <img src="/docs/prev/2023_visualizacion-2.png">
+    <img src="/docs/prev_projects/2023_visualizacion-2.png">
     <div class="text">
     <a href="https://sebastianriffo.github.io/congreso-chile/en/home.html" style="font-size: 18px; color:#b300b3" target="_blank">Chilean parliamentary election maps (2023)</a>
     <br> An interactive visualization of the chilean parliamentary elections from 1932 onwards, for both the Chamber of Deputies and the Senate, integrating several public sources. 

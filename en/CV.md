@@ -27,6 +27,3 @@ Thesis directed by <a href="https://who.rocq.inria.fr/Julien.Salomon/" target="_
 
 A detailed CV can be found <a href="https://sebastianriffo.github.io/docs/CV/Riffo_Sebastian_CV_full.pdf" target="_blank">here</a>.
 
-<!--
-A detailed CV can be found here : {<a href="https://sebastianriffo.github.io/docs/CV/Reyes-Riffo_CV_Academia_en.pdf" target="_blank">english</a>, <a href="https://sebastianriffo.github.io/docs/CV/Reyes-Riffo_CV_Academie_fr" target="_blank">french</a>} version.
--->
